@@ -1,0 +1,5 @@
+'.source.elvish':
+  'editor':
+    'commentStart': '# '
+    'increaseIndentPattern': '^\\s*(fn|if|else|while|for|{|\\[)'
+    'decreaseIndentPattern': '^\\s*(}|\\])'

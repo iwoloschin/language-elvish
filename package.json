@@ -1,0 +1,15 @@
+{
+  "name": "language-elvish",
+  "main": "./lib/language-elvish",
+  "version": "0.0.0",
+  "description": "A langage grammar for the Elvish Shell",
+  "keywords": [
+  ],
+  "repository": "https://github.com/iwoloschin/language-elvish",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
