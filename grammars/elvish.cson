@@ -32,7 +32,7 @@ repository:
     builtinFunctions:
       {
         comment: 'Elvish Builtin Functions - Compound expressions *must* be placed first!'
-        match: '[^\\/]\\b((not-eq|assoc|bool|cd|constantly|count|dissoc|drop|each|eawk|echo|eq|exec|exit|explode|external|fail|fclose|fopen|from-json|has-external|has-prefix|has-suffix|is|joins|keys|kind-of|nop|not|ord|path-.*|peach|pipe|prclose|put|pprint|print|pwclose|range|rand|randint|repeat|replaces|repr|resolve|run-parallel|search-external|slurp|splits|src|take|tilde-abbr|to-json|to-string|wcswidth))\\b'
+        match: '[^\\/]\\b((not-eq|all|assoc|bool|cd|constantly|count|dissoc|drop|each|eawk|echo|eq|exec|exit|explode|external|fail|fclose|fopen|from-json|has-external|has-prefix|has-suffix|is|joins|keys|kind-of|nop|not|ord|path-.*|peach|pipe|prclose|put|pprint|print|pwclose|range|rand|randint|repeat|replaces|repr|resolve|run-parallel|search-external|slurp|splits|src|take|tilde-abbr|to-json|to-string|wcswidth))\\b'
         captures:
           1: name: 'support.function.elvish'
       }
