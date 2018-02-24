@@ -44,7 +44,7 @@ repository:
       }
     builtinFlowControl:
       {
-        match: '\\b((if|elif|else|while|for|try|except|finally|nop))\\b\\s+'
+        match: '\\b((if|elif|else|while|for|try|except|finally|nop|return))\\b\\s+'
         captures:
           1: name: 'keyword.control.elvish'
       }
