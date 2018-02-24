@@ -1,5 +1,7 @@
 '.source.elvish':
   'editor':
     'commentStart': '# '
+    'softTabs': true
+    'tabLength': 4
     'increaseIndentPattern': '^\\s*(fn|if|else|while|for|{|\\[)'
     'decreaseIndentPattern': '^\\s*(}|\\])'
