@@ -2,6 +2,6 @@
   'editor':
     'commentStart': '# '
     'softTabs': true
-    'tabLength': 4
+    'tabLength': 2
     'increaseIndentPattern': '^\\s*(fn|if|else|while|for|{|\\[)'
     'decreaseIndentPattern': '^\\s*(}|\\])'
