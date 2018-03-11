@@ -53,7 +53,7 @@ repository:
         comment: 'Elvish math & boolean operators'
         match: '(\\s|\\()((\\+ |\\- |\\* |\\/ |\\% |\\^|\\<s?|\\<\\=s?|\\>s?|\\>\\=s?|\\=\\=s?|\\!\\=s?))'
         captures:
-          1: name: 'keyword.operator.elvish'
+          2: name: 'keyword.operator.elvish'
       }
     lineComment:
       {
