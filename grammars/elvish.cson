@@ -51,7 +51,7 @@ repository:
     mathFunctions:
       {
         comment: 'Elvish math & boolean operators'
-        match: '(\\s|\\()((\\+ |\\- |\\* |\\/ |\\% |\\^|\\<s?|\\<\\=s?|\\>s?|\\>\\=s?|\\=\\=s?|\\!\\=s?))'
+        match: '(\\s|\\()((\\+ |\\- |\\* |\\/ |\\% |\\^|\\<s?|\\<\\=s?|\\>\\=?s?|\\=\\=s?|\\!\\=s?))'
         captures:
           2: name: 'keyword.operator.elvish'
       }
