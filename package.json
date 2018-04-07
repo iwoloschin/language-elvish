@@ -1,7 +1,7 @@
 {
   "name": "language-elvish",
   "main": "./lib/language-elvish",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "A langage grammar for the Elvish Shell",
   "keywords": [],
   "repository": "https://github.com/iwoloschin/language-elvish",
