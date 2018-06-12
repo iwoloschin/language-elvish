@@ -18,7 +18,7 @@ repository:
   map:
       {
         comment: 'Elvish Map Keyword Highlighting'
-        match: '(&)(\\S*)(=)(\w*)'
+        match: '(&)(\\S*)(=)'
         captures:
           1: name: 'keyword.operator.elvish'
           2: name: 'variable.parameter.elvish'
@@ -32,7 +32,7 @@ repository:
     builtinFunctions:
       {
         comment: 'Elvish Builtin Functions - Compound expressions *must* be placed first!'
-        match: '[^\\/-]\\b((not-eq|all|and|assoc|bool|cd|constantly|count|dissoc|drop|each|eawk|echo|eq|exec|exit|explode|external|fail|fclose|fopen|from-json|has-external|has-prefix|has-suffix|is|joins|keys|kind-of|nop|not|or|ord|path-abs|path-base|path-clean|path-dir|path-ext|peach|pipe|prclose|put|pprint|print|pwclose|range|rand|randint|repeat|replaces|repr|resolve|run-parallel|search-external|slurp|splits|src|take|tilde-abbr|to-json|to-string|wcswidth))[\\b\\n ]'
+        match: '[^\\/-]\\b((not-eq|all|and|assoc|bool|cd|constantly|count|dissoc|drop|each|eawk|echo|eq|exec|exit|explode|external|fail|fclose|fopen|from-json|has-external|has-prefix|has-suffix|is|joins|keys|kind-of|nop|not|or|ord|path-abs|path-base|path-clean|path-dir|path-ext|peach|pipe|prclose|put|pprint|print|pwclose|range|rand|randint|repeat|replaces|repr|resolve|run-parallel|search-external|slurp|splits|src|take|tilde-abbr|to-json|to-string|wcswidth))[\\b\\n )]'
         captures:
           1: name: 'support.function.elvish'
       }
@@ -99,7 +99,12 @@ repository:
               { include: '#builtinVariables'}
               {
                 match: '&'
-                name: 'variable.parameter.elvish'
+                name: 'keyword.operator.elvish'
+              }
+              {
+                match: '\\(([\\w-]*)\\) ?'
+                captures:
+                  1: name: 'entity.function.name.elvish'
               }
               {
                 match: '(@?[\\w-]*) ?'
